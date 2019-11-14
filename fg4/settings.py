@@ -25,7 +25,10 @@ SECRET_KEY = 'wplj@%i(p^(=*#160fdn-3qfnu+81=1)u*8zxbf07*(go1i0=#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'fg4.herokuapp.com',
+]
 
 
 # Application definition
