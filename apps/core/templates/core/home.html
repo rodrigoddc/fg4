@@ -1,0 +1,432 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %} Inicial {% endblock %}
+
+{% block main %}
+<style>
+  .yellow {
+    color: #ffc31c;
+  }
+  .blue {
+    color: ;
+  }
+</style>
+<body id="menu" class="body-page">
+  <!--[if lt IE 8]>
+            <p class="browsehappy">Você esta usando um navegador<strong> desatualizado</strong> . Por favor, atualiaze seu navegador </a>para melhorar sua experiência.</p>
+        <![endif]-->
+
+  <!-- Page Loader : just comment these lines to remove it -->
+  <div class="page-loader" id="page-loader">
+    <div>
+      <div class="icon ion-spin"></div>
+      <p>Carregando</p>
+    </div>
+  </div>
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-drawer menu-right logo-left topmenu-right ">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-line-->
+      <span class="menu-icon menu-icon-line">
+        <span class="text show-menu-visible">Fechar</span>
+        <span class="text hide-menu-visible">Menu</span>
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="./#">
+      <!-- Arrows scroll down/up -->
+<!--      <span class="logo">-->
+<!--        <img class="light-logo" src="imagens/logo.png" alt="Logo">-->
+<!--      </span>-->
+      <span class="text">
+        <span class="">FG <b>4.</b></span>
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+
+  {% include 'core/navbar.html' %}
+
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu-->
+
+  <!-- BEGIN OF page cover -->
+  <div class="page-cover">
+    <!-- Cover Background -->
+    <div class="cover-bg bg-img" data-image-src="{% static 'imagens/arquitetura2.jpeg' %}"></div>
+
+
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(29, 29, 29, 0.2)"></div>
+  </div>
+  <!--END OF page cover -->
+
+  <!-- BEGIN OF page main content -->
+  <main class="page-main main-anim fullpage-container " id="mainpage">
+
+    <!-- Begin of home section -->
+    <div class="section section-home fullscreen-md main-home section-center" data-section="home">
+
+      <div class="section-cover home-cover">
+      </div>
+
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row c-wrapper justify-content-center">
+            <div class="col-12 col-md-8 text-center">
+              <!-- title and description -->
+              <div class="title-desc mb-0">
+                <h1 class="home-title anim-blur anim-2">
+                  <span class="light">FG</span>
+                  <span class="normal">4.</span>
+                </h1>
+                <p class="anim-3">Excelência em qualidade</p>
+              </div>
+              <div class="home-btns btns-action anim-4">
+                <a class="btn btn-line long-line" href="#sobre-nos">
+                  <span class="font-weight-bold h4 yellow">Sobre nós</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Próxima</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of home section -->
+
+    <!-- Begin of description section -->
+    <div class="section fp-auto-height-responsive fullscreen-md-off" data-section="sobre-nos">
+
+      <!-- title -->
+      <div class="section-title text-center anim">
+        <h2 class="title-bg">Sobre nós</h2>
+      </div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-md-4 text-left">
+              <!-- title and description -->
+              <div class="title-desc pr-4">
+                <h2 class="display-5 anim-2">Mais que entregar, garantimos a qualidade.</h2>
+              </div>
+
+              <!-- Action button -->
+              <div class="btns-action anim-3 mb-3">
+                <a class="btn btn-line" href="#projetos">
+                  <span class="font-weight-bold yellow">Projetos</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 text-left">
+              <!-- title and description -->
+              <div class="title-desc anim-4">
+                <p>O compromisso com a honestidade e satisfação do cliente são as nossas pautas diárias.</p>
+                <p>Somos apaixonados por encontrar as melhores situações para cada um
+                  dos nossos clientes. Construímos obedecendos os mais altos padrões de qualidade,
+                  observando as tendências e influências das tecnologias mais atuais.
+                </p>
+                <p>Escolher nossos serviços é sinônimo de satisfação garantida.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <!-- End of section wrapper -->
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon"></span>
+          <span class="txt">Próxima</span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of description section -->
+
+
+    <!-- Begin of slider section -->
+
+    <!-- End of slider section -->
+
+    <!-- Begin of list projects section -->
+    <div class="section section-list-feature fp-auto-height-responsive " data-section="projetos">
+
+
+      <!-- title -->
+      <div class="section-title text-center anim">
+        <h2 class="title-bg">Projetos</h2>
+      </div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper with-margin">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="section-content-header decor">
+            <div class="row">
+              <div class="col-12 col-md-4 text-left">
+                <!-- title and description -->
+                <div class="title-desc pr-4">
+                  <h2 class="display-5 anim-2">Nossos projetos.</h2>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-8 text-left">
+                <!-- title and description -->
+                <div class="title-desc anim-4">
+                  <p>
+                    Estes são nossos projetos mais recentes.
+                    Aproveite para conhecer melhor nosso trabalho.
+                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- service list -->
+          <div class="list-items row anim-list">
+            <div class="item col-12 col-lg-4">
+              <div class="media media-service">
+                <div class="media-body">
+                  <h4 class="">Itaquera</h4>
+                  <p>Uma solução elegante e super atrativa numa região de fácil acesso.</p>
+                </div>
+                <footer class="media-footer">
+                  <a class="btn btn-line" href="#">
+                    <span class="text">Detalhes</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="item col-12 col-lg-4">
+              <div class="media media-service">
+                <div class="media-body">
+                  <h4 class="">Guaianazes</h4>
+                  <p>O melhor custo-benefício da região!</p>
+                </div>
+                <footer class="media-footer">
+                  <a class="btn btn-line" href="./item.html">
+                    <span class="text">Detalhes</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+            <div class="item col-12 col-lg-4">
+              <div class="media media-service mb-0">
+                <div class="media-body">
+                  <h4 class="">Zona Sul</h4>
+                  <p>Um projeto de excelência e referência.</p>
+                </div>
+                <footer class="media-footer">
+                  <a class="btn btn-line" href="./item.html">
+                    <span class="text">Detalhes</span>
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!-- end of service list -->
+        </div>
+
+      </div>
+      <!-- End of section wrapper -->
+
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon"></span>
+          <span class="txt">Próxima</span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of list services/features section -->
+
+    <!-- Begin of slider section -->
+
+    <!-- End of slider section -->
+
+
+    <!-- Begin of grid list section -->
+
+    <!-- End of grid list section -->
+
+
+
+    <!-- Begin of slider/quotes section -->
+
+    <!-- End of slider/quotes section -->
+
+    <!-- Begin of register/login/signin section -->
+
+    <!-- End of register/login/signin section -->
+
+    <!-- Begin of contact section -->
+    <div class="section section-contact fp-auto-height-responsive " data-section="contato">
+
+      <!-- title -->
+      <div class="section-title text-center anim">
+        <h2 class="title-bg">Contato</h2>
+      </div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper  with-margin">
+
+        <div class="section-content">
+          <div class="row">
+
+            <!-- begin of title content -->
+            <div class="col-12 col-lg-4 anim">
+              <div class="title-desc pr-4">
+                <h2 class="display-5 anim-2">Entre em contato.</h2>
+              </div>
+            </div>
+            <!-- end of title content -->
+
+            <!-- begin of desc content -->
+            <div class="col-12 col-lg-8">
+              <!-- content -->
+              <div class="section-content anim text-left">
+                <!-- begin of slider -->
+                <div class="slider-swiper-contact">
+                  <!-- slider content-->
+                  <div class="swiper-container slider-container">
+                    <div class="item-list swiper-wrapper">
+                      <!-- contact-information-slide -->
+                      <div class="swiper-slide contact-information-slide">
+                        <div class="contact-information" id="contact-information">
+                          <!-- title and description -->
+                          <div class="title-desc mb-0">
+                            <div class="anim-4">
+                              <p>Gostaria de saber desenvolver um projeto surpreendente
+                                ou possui questões sobre nossa empresa ou serviços?
+                                Sinta-se à vontade para entrar em contato conosco,
+                                estaremos contentes em responder!
+                              </p>
+                            </div>
+                            <div class="address-container anim-5">
+                              <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                  <h4 class="display-6 display-decor">Contatos</h4>
+                                  <p>Lique: 11 94033-4153</p>
+                                  <p>Email: fg4@gmail.com</p>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                  <h4 class="display-6 display-decor">Endereço</h4>
+                                  <p>
+                                    Rua Macambira, 35
+                                  </p><p>Poá-SP
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end of contact-information-slide -->
+
+                      <!-- contact-message-slide -->
+                      <div class="swiper-slide contact-message-slide">
+                        <div class="contact-message">
+                          <!-- title and description -->
+                          <div class="title-desc">
+                            <p class="">For questions about our company and products found on
+                              our stores. Cras vitae neque molestie, rhoncus ipsum
+                              sit amet, lobortis dui. Fusce in urna sem.</p>
+                          </div>
+                          <!-- begin of message container -->
+                          <div class="message-form">
+                            <div class="form-container form-container-card">
+                              <!-- Message form container -->
+                              <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php"
+                              id="message_form">
+                                <div class="row">
+                                  <div class="col-12 col-lg-6">
+                                    <div class="form-group name">
+                                      <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline input-full thick form-success-clean"
+                                      required>
+                                    </div>
+                                    <div class="form-group email">
+                                      <input id="mes-email" type="email" placeholder="Email" name="email" class="form-control form-control-outline input-full thick form-success-clean"
+                                      required>
+                                    </div>
+                                    <div class="form-group no-border">
+                                      <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean"
+                                      required></textarea>
+
+                                      <div>
+                                        <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-lg-6">
+                                    <button id="submit-message" class="btn btn-outline-white email_b" name="submit_message">
+                                      <span class="txt">Send Now</span>
+                                      <span class="arrow-icon"></span>
+                                    </button>
+                                  </div>
+                                </div>
+
+                              </form>
+                            </div>
+                          </div>
+                          <!-- end of message container -->
+                        </div>
+                      </div>
+                      <!-- end of contact-message-slide -->
+
+                    </div>
+                  </div>
+                </div>
+                <!-- end of slider slider-swiper-gamma-->
+              </div>
+            </div>
+            <!-- end of desc content -->
+          </div>
+        </div>
+
+      </div>
+      <!-- End of section wrapper -->
+
+    </div>
+    <!-- End of contact section -->
+  </main>
+  <!-- END OF page main content -->
+
+{% include 'core/footer.html' %}
+
+
+{% endblock %}
+
+
